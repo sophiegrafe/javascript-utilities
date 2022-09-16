@@ -5,6 +5,9 @@
  * @param collection
  * @param n
  **/
-function last() {
-  // Given a collection of elements, the last function will return the n last element of that collection
+const last = (collection, n) => {
+  if (!collection) throw new Error("Collection is required");
+  return n && n !== 0? collection.slice(-n) : collection[collection.length - 1];
 }
+
+export default last;

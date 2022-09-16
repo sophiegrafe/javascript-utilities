@@ -4,4 +4,6 @@
  ** @return
  * @param args
  **/
-function isDefined() {}
+const isDefined = args => args !== undefined;
+
+export default isDefined;

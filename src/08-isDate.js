@@ -4,4 +4,6 @@
  ** @return {boolean}
  * @param args
  **/
-function isDate() {}
+const isDate = args => args > 0 && args instanceof Date && !isNaN(args);
+
+export default isDate;

@@ -4,4 +4,6 @@
  ** @return {boolean}
  * @param args
  **/
-function isFunction() {}
+const isFunction = args => typeof args === 'function';
+
+export default isFunction;

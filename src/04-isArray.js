@@ -4,4 +4,9 @@
  ** @return
  * @param collection
  **/
-export default function isArray() {}
+const isArray = array => {
+    if (array === undefined) throw new Error("collection is required");
+    return Array.isArray(array);
+};
+
+export default isArray;

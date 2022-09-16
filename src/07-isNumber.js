@@ -4,4 +4,6 @@
  ** @return {boolean}
  * @param args
  **/
-function isNumber() {}
+const isNumber = args => typeof args === 'number';
+
+export default isNumber;
